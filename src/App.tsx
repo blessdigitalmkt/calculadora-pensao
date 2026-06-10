@@ -1,5 +1,6 @@
 import './styles/global.css';
 import './styles/animations.css';
+import { useEffect, useRef } from 'react';
 import { useCalculator } from './hooks/useCalculator';
 import { ProgressBar } from './components/ProgressBar/ProgressBar';
 import { Disclaimer } from './components/Disclaimer/Disclaimer';
@@ -13,6 +14,11 @@ import styles from './App.module.css';
 
 export function App() {
   const { step, formData, result, updateField, goNext, goBack, reset, isStepValid } = useCalculator();
+  const cardRef = useRef<HTMLDivElement>(null);
+
+  useEffect(() => {
+    cardRef.current?.scrollIntoView({ behavior: 'smooth', block: 'start' });
+  }, [step]);
 
   return (
     <div className={styles.app}>
@@ -57,7 +63,7 @@ export function App() {
             </>
           )}
 
-          <div className={styles.card}>
+          <div className={styles.card} ref={cardRef}>
             {step === 1 && (
               <Step1BasicData
                 formData={formData}
