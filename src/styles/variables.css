@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600&family=Inter:wght@300;400;500;600&display=swap');
+
+:root {
+  /* Brand Colors */
+  --color-primary:       #600909;
+  --color-primary-dark:  #3D0505;
+  --color-primary-light: #8B1A1A;
+  --color-accent:        #E3BC9A;
+  --color-accent-dark:   #C9A070;
+  --color-accent-light:  #F0D5B8;
+
+  /* Backgrounds */
+  --color-bg:            #FAF7F4;
+  --color-surface:       #F5F0EA;
+  --color-surface-2:     #EDE6DC;
+  --color-dark:          #1A0505;
+  --color-dark-2:        #2C0A0A;
+
+  /* Text */
+  --color-text:          #1A0505;
+  --color-text-muted:    #7B5B5B;
+  --color-text-light:    #A08080;
+  --color-white:         #FFFFFF;
+
+  /* Semantic */
+  --color-success:       #4A7C59;
+  --color-success-light: #EAF4EE;
+  --color-warning:       #B8860B;
+  --color-warning-light: #FFF8E7;
+  --color-border:        #DDD0C4;
+  --color-border-focus:  #600909;
+
+  /* Typography */
+  --font-heading: 'Cormorant Garamond', Georgia, serif;
+  --font-body:    'Inter', system-ui, sans-serif;
+
+  /* Font Sizes */
+  --text-xs:   0.75rem;
+  --text-sm:   0.875rem;
+  --text-base: 1rem;
+  --text-lg:   1.125rem;
+  --text-xl:   1.25rem;
+  --text-2xl:  1.5rem;
+  --text-3xl:  1.875rem;
+  --text-4xl:  2.25rem;
+  --text-5xl:  3rem;
+
+  /* Spacing */
+  --space-1:  0.25rem;
+  --space-2:  0.5rem;
+  --space-3:  0.75rem;
+  --space-4:  1rem;
+  --space-5:  1.25rem;
+  --space-6:  1.5rem;
+  --space-8:  2rem;
+  --space-10: 2.5rem;
+  --space-12: 3rem;
+  --space-16: 4rem;
+  --space-20: 5rem;
+
+  /* Radius */
+  --radius-sm:  0.25rem;
+  --radius-md:  0.5rem;
+  --radius-lg:  0.75rem;
+  --radius-xl:  1rem;
+  --radius-2xl: 1.5rem;
+  --radius-full: 9999px;
+
+  /* Shadows */
+  --shadow-sm:  0 1px 3px rgba(96, 9, 9, 0.08);
+  --shadow-md:  0 4px 12px rgba(96, 9, 9, 0.12);
+  --shadow-lg:  0 8px 24px rgba(96, 9, 9, 0.15);
+  --shadow-xl:  0 16px 40px rgba(96, 9, 9, 0.18);
+
+  /* Transitions */
+  --transition-fast:   150ms ease;
+  --transition-base:   250ms ease;
+  --transition-slow:   400ms ease;
+
+  /* Layout */
+  --max-width: 680px;
+  --header-height: 64px;
+}

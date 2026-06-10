@@ -1,0 +1,82 @@
+.wrapper {
+  margin-bottom: var(--space-8);
+}
+
+.title {
+  font-family: var(--font-heading);
+  font-size: var(--text-xl);
+  color: var(--color-text);
+  margin-bottom: var(--space-4);
+}
+
+.table {
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+}
+
+.row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: var(--space-3) var(--space-5);
+  border-bottom: 1px solid var(--color-border);
+  background: var(--color-white);
+  transition: background var(--transition-fast);
+}
+
+.row:last-child {
+  border-bottom: none;
+}
+
+.rowHighlight {
+  background: var(--color-success-light);
+}
+
+.rowNegative {
+  background: #FFF8F8;
+}
+
+.rowTotal {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: var(--space-4) var(--space-5);
+  background: var(--color-primary);
+  color: var(--color-white);
+}
+
+.rowLabel {
+  font-size: var(--text-sm);
+  color: var(--color-text);
+}
+
+.rowHighlight .rowLabel,
+.rowHighlight .rowValue {
+  color: var(--color-success);
+}
+
+.rowNegative .rowLabel,
+.rowNegative .rowValue {
+  color: var(--color-primary);
+}
+
+.rowTotal .rowLabel,
+.rowTotal .rowValue {
+  color: var(--color-white);
+  font-weight: 600;
+}
+
+.rowValue {
+  font-weight: 600;
+  font-size: var(--text-sm);
+  color: var(--color-text);
+}
+
+.note {
+  margin-top: var(--space-3);
+  font-size: var(--text-xs);
+  color: var(--color-text-light);
+  font-style: italic;
+  line-height: 1.5;
+}
