@@ -66,6 +66,7 @@ export function useCalculator() {
 
   const goNext = useCallback(() => {
     setDirection('forward');
+    window.scrollTo({ top: 0, behavior: 'smooth' });
     setStep(prev => {
       if (prev === 4) return 5;
       if (prev === 5) {
@@ -79,6 +80,7 @@ export function useCalculator() {
 
   const goBack = useCallback(() => {
     setDirection('backward');
+    window.scrollTo({ top: 0, behavior: 'smooth' });
     setStep(prev => {
       if (prev === 'result') return 5;
       if ((prev as number) <= 1) return 1;
